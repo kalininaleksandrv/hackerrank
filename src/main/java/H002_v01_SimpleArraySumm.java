@@ -1,13 +1,14 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class H002_v01_SimpleArraySumm {
     private static final Scanner scanner = new Scanner(System.in);
 
     public void getSolution() throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/home/eyesless/Загрузки/simpleoutput"));
 
         int arCount = Integer.parseInt(scanner.nextLine().trim());
 
@@ -32,8 +33,12 @@ public class H002_v01_SimpleArraySumm {
      * Complete the simpleArraySum function below.
      */
     static int simpleArraySum(int[] ar) {
+        int summ = 0;
+        for (int j : ar) {
+            summ = summ + j;
+        }
 
-        System.out.println("ar " + ar);
-        return 0;
+        System.out.println("ar " + Arrays.toString(ar));
+        return summ;
     }
 }

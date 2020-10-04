@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class H001_v01_Solution {
+public class H0001_ProblemSolving_0001_v01_Solution {
 
     public void getSolution() {
         System.out.println("enter two digits");

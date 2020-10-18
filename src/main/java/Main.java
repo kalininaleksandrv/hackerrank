@@ -2,9 +2,9 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        H0001_ProblemSolving_0002_v01_SimpleArraySumm solution = new H0001_ProblemSolving_0002_v01_SimpleArraySumm();
+        H0001_ProblemSolving_0003_v01_Trplets solution = new H0001_ProblemSolving_0003_v01_Trplets();
         solution.getSolution();
     }
 }

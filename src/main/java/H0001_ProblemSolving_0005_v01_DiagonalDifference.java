@@ -16,7 +16,7 @@ public class H0001_ProblemSolving_0005_v01_DiagonalDifference {
         AtomicInteger secondDiag = new AtomicInteger(0);
         AtomicInteger removeCount = new AtomicInteger(0);
 
-        arr.forEach(firstLevel ->{
+        arr.forEach(firstLevel -> {
             firstDiag.addAndGet(firstLevel.get(removeCount.getAndIncrement()));
             secondDiag.addAndGet(firstLevel.get(firstLevel.size() - removeCount.get()));
 
@@ -49,7 +49,6 @@ public class H0001_ProblemSolving_0005_v01_DiagonalDifference {
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
-
         bufferedReader.close();
         bufferedWriter.close();
     }

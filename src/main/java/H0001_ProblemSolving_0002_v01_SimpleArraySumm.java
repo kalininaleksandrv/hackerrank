@@ -7,6 +7,19 @@ import java.util.Scanner;
 public class H0001_ProblemSolving_0002_v01_SimpleArraySumm {
     private static final Scanner scanner = new Scanner(System.in);
 
+    /*
+     * Complete the simpleArraySum function below.
+     */
+    static int simpleArraySum(int[] ar) {
+        int summ = 0;
+        for (int j : ar) {
+            summ = summ + j;
+        }
+
+        System.out.println("ar " + Arrays.toString(ar));
+        return summ;
+    }
+
     public void getSolution() throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/home/eyesless/Загрузки/simpleoutput"));
 
@@ -27,18 +40,5 @@ public class H0001_ProblemSolving_0002_v01_SimpleArraySumm {
         bufferedWriter.newLine();
 
         bufferedWriter.close();
-    }
-
-    /*
-     * Complete the simpleArraySum function below.
-     */
-    static int simpleArraySum(int[] ar) {
-        int summ = 0;
-        for (int j : ar) {
-            summ = summ + j;
-        }
-
-        System.out.println("ar " + Arrays.toString(ar));
-        return summ;
     }
 }

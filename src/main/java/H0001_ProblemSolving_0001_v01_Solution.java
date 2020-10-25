@@ -15,6 +15,6 @@ public class H0001_ProblemSolving_0001_v01_Solution {
 
     private int solveMeFirst(int a, int b) {
         System.out.println("result is ");
-        return a+b;
+        return a + b;
     }
 }

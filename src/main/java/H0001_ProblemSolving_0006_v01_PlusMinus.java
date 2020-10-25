@@ -1,6 +1,5 @@
 import lombok.SneakyThrows;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -21,7 +20,7 @@ public class H0001_ProblemSolving_0006_v01_PlusMinus {
         float proportionOfPositive = (float) sumOfPositiveElements / (float) arr.length;
 
         System.out.println(proportionOfPositive);
-        System.out.println(1-proportionOfNullable-proportionOfPositive);
+        System.out.println(1 - proportionOfNullable - proportionOfPositive);
         System.out.println(proportionOfNullable);
 
     }

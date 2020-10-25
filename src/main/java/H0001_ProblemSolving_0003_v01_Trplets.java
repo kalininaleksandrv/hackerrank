@@ -15,8 +15,35 @@ import static java.util.stream.Collectors.toList;
 
 public class H0001_ProblemSolving_0003_v01_Trplets {
 
+    static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+
+        AtomicInteger count = new AtomicInteger(0);
+        Integer[] aliceAndBob = new Integer[]{0, 0};
+
+        final List<Integer[]> pairs = a
+                .stream()
+                .map(item -> {
+                    Integer[] myPair = new Integer[a.size()];
+                    myPair[0] = item;
+                    myPair[1] = b.get(count.getAndIncrement());
+                    return myPair;
+                })
+                .collect(Collectors.toList());
+
+        pairs.forEach(pair -> {
+
+            if (pair[0] > pair[1]) {
+                aliceAndBob[0]++;
+            }
+            if (pair[0] < pair[1]) {
+                aliceAndBob[1]++;
+            }
+        });
+        return Arrays.stream(aliceAndBob).collect(Collectors.toList());
+    }
+
     @SneakyThrows
-    public void getSolution () {
+    public void getSolution() {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/home/eyesless/Загрузки/triplets"));
@@ -42,32 +69,5 @@ public class H0001_ProblemSolving_0003_v01_Trplets {
 
         bufferedReader.close();
         bufferedWriter.close();
-    }
-
-    static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
-
-        AtomicInteger count = new AtomicInteger(0);
-        Integer [] aliceAndBob = new Integer[]{0, 0};
-
-        final List<Integer[]> pairs = a
-                .stream()
-                .map(item -> {
-                    Integer[] myPair = new Integer[a.size()];
-                    myPair[0] = item;
-                    myPair[1] = b.get(count.getAndIncrement());
-                    return myPair;
-                })
-                .collect(Collectors.toList());
-
-        pairs.forEach (pair -> {
-
-            if(pair[0] > pair[1]){
-                aliceAndBob[0]++;
-            }
-            if (pair[0] < pair[1]){
-                aliceAndBob[1]++;
-            }
-        });
-        return Arrays.stream(aliceAndBob).collect(Collectors.toList());
     }
 }

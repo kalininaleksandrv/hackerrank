@@ -16,7 +16,6 @@ public class H0001_ProblemSolving_0007_v01_StairCase {
             System.out.println(new String(chars));
             countOfSymbol++;
         }
-
     }
 
     @SneakyThrows

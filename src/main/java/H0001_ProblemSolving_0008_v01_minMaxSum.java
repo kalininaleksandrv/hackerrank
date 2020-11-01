@@ -7,16 +7,18 @@ public class H0001_ProblemSolving_0008_v01_minMaxSum {
     private static final Scanner scanner = new Scanner(System.in);
 
     private static void miniMaxSum(int[] arr) {
-        int sumOfMax = Arrays.stream(arr)
+        long sumOfMax = Arrays.stream(arr)
+                .asLongStream()
                 .sorted()
                 .skip(1)
                 .sum();
 
-        int sumOfMin = Arrays.stream(arr)
+        long sumOfMin = Arrays.stream(arr)
                 .boxed()
                 .sorted(Collections.reverseOrder())
                 .skip(1)
-                .reduce(Integer::sum)
+                .map(Long::valueOf)
+                .reduce(Long::sum)
                 .orElseThrow(() -> new RuntimeException("unable to calculate"));
 
         System.out.println(sumOfMin + " " + sumOfMax);

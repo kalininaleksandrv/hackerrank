@@ -3,7 +3,7 @@ import lombok.SneakyThrows;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class H0001_ProblemSolving_0006_v01_PlusMinus {
+public class H0001_ProblemSolving_0006_v01_PlusMinus implements Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     static void plusMinus(int[] arr) {

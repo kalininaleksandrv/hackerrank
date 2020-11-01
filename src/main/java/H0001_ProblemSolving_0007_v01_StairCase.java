@@ -2,7 +2,7 @@ import lombok.SneakyThrows;
 
 import java.util.Scanner;
 
-public class H0001_ProblemSolving_0007_v01_StairCase {
+public class H0001_ProblemSolving_0007_v01_StairCase implements Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
 

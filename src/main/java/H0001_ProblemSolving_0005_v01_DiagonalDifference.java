@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
-public class H0001_ProblemSolving_0005_v01_DiagonalDifference {
+public class H0001_ProblemSolving_0005_v01_DiagonalDifference implements Solution {
 
     public static int diagonalDifference(List<List<Integer>> arr) {
         AtomicInteger firstDiag = new AtomicInteger(0);

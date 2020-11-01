@@ -1,9 +1,10 @@
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        H0001_ProblemSolving_0008_v01_minMaxSum solution
-                = new H0001_ProblemSolving_0008_v01_minMaxSum();
+        Solution solution = new H0001_ProblemSolving_0009_v01_cakeCandles();
         solution.getSolution();
     }
 }

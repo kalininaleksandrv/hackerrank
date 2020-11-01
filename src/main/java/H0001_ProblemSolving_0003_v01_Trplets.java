@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class H0001_ProblemSolving_0003_v01_Trplets {
+public class H0001_ProblemSolving_0003_v01_Trplets implements Solution {
 
     static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 

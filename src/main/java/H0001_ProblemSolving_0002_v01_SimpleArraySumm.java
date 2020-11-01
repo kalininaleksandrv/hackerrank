@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class H0001_ProblemSolving_0002_v01_SimpleArraySumm {
+public class H0001_ProblemSolving_0002_v01_SimpleArraySumm implements Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     /*

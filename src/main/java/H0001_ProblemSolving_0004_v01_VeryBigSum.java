@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class H0001_ProblemSolving_0004_v01_VeryBigSum {
+public class H0001_ProblemSolving_0004_v01_VeryBigSum implements Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
 

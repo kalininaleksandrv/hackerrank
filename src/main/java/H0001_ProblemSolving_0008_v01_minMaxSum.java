@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class H0001_ProblemSolving_0008_v01_minMaxSum {
+public class H0001_ProblemSolving_0008_v01_minMaxSum implements Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
 
